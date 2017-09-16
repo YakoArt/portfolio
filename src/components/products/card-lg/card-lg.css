@@ -1,0 +1,67 @@
+.Card-Wrap {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid rgba(152, 171, 63, .0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .00); /* 8px 8px 20px .05*/
+    transition: all ease-in-out .247s;
+    margin-bottom: 50px;
+}
+
+
+.Card-Preview, .Card-Info, .Card-Nav {padding: 15px;}
+
+.Card-Preview {
+    display: block;
+    position: relative;
+    width: 359,990px; height: 480px;
+    background-color: #fff;
+    background-image: url('../../../data/images/card-01.png');
+}
+.Card-Preview--Marker, .Card-Preview--Brand {font-family: 'Ledger', serif;}
+.Card-Preview--Marker {color: #98ab3f;}
+.Card-Preview--Brand {color: #98ab3f; position: absolute; bottom: 15px; left: 15px; font-size: 22px;}
+
+
+.Card-Info {}
+.Card-Info--Category {color: #a69a7c;}
+.Card-Info--Discription {font-size: 22px; padding: 10px 0px;}
+.Card-Info--Price {display: block; text-align: center; padding: 10px 0px; color: #a69a7c; font-size: 40px; font-weight: 500;}
+.Card-Info--Price span {font-size: 30px; font-weight: 400;}
+.Card-Info--Price i {font-size: 36px;}
+
+.Card-Nav {display: block; padding-top: 0px; text-align: center; margin-bottom: 20px;}
+.Card-Nav--LinkBtn {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 48px;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #98ab3f;
+    border-radius: 24px;
+    background-color: #fff;
+    color: #574d3d;
+    transition: all ease-in-out .247s;
+}
+.Card-Nav--LinkBtn:hover {color: #fff; background-color: #98ab3f; text-decoration: none;}
+
+.Card-Nav--LinkBtn-icon {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 48px;
+    text-decoration: none;
+    color: #574d3d;
+    font-size: 28px;
+    margin: 0px 28px;
+    transition: all ease-in-out .247s;
+}
+.Card-Nav--LinkBtn-icon:first-child {margin-left: 0px;}
+.Card-Nav--LinkBtn-icon:last-child {margin-right: 0px;}
+.Card-Nav--LinkBtn-icon:hover {color: #98ab3f; text-decoration: none;}
+
+.Card-Wrap:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, .05); /* 8px 8px 20px .05*/
+    border: 1px solid rgba(152, 171, 63, .05);
+} 

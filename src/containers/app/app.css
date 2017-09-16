@@ -1,0 +1,86 @@
+@import "../../data/libs/reset.css" screen;
+@import "../../data/libs/bootstrap-grid.min.css" screen;
+@import "../../data/libs/font-awesome.min.css";
+
+/* Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ledger');
+
+
+.App {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background-color: #fafafa;
+  color: #574d3d;
+}
+.App h1 {
+  font-family: 'Ledger', serif;
+  color: #a69a7c;
+  font-size: 58px;
+  line-height: 58px;
+}
+.App h1 span {
+  font-family: 'Roboto', sans-serif;
+  color: #98ab3f;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+
+.App-Header {
+  display: block;
+  box-shadow: 0px 0px 20px rgba(141, 48, 48, 0.05);
+  background-color: #fff;
+}
+.App-Logo {margin-top: 20px; margin-bottom: 18px;}
+
+.App-Nav {display: block; height: 62px; margin-top: 15px;}
+.App-Nav a {color: #574d3d; text-decoration: none;}
+.App-Nav a:hover {color: #98ab3f; text-decoration: none;}
+.App-Nav--User { text-align: right; margin-bottom: 10px; font-weight: 500;}
+.App-Nav--User span { margin-right: 12px; font-weight: 400; color: #959595; font-size: 14px;}
+.App-Nav--Navigation { text-align: right; }
+.App-Nav--Navigation ul {
+  display: inline-block;
+  list-style: none; 
+  border-top: 1px solid #efefef; }
+
+.App-Nav--Navigation ul li { display: inline-block; margin: 0px 12px; margin-top: 10px;}
+.App-Nav--Navigation ul li:last-child {margin-right: 0px;}
+
+.App-Cart {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  color: #98ab3f;
+  margin-top: 15px; height: 62px;}
+
+.App-Cart i {margin-top: 20px;}
+
+.App-Cart--Count {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  line-height: 18px;
+  top: 5px;
+  right: 15px;
+  border-radius: 50%;
+  background-color: #6b604c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px;
+}
+
+.App-Route {
+  display: block;
+  min-height: 90vh;
+  padding-top: 20px;
+}
+
+
+.App-Footer {background-color: #ececec;}
+.App-Footer ul {margin: 0px;}
