@@ -22,11 +22,7 @@ export default class AppReducer {
             case 'App/Spinner/Hide': {
                 return {...state, ... { isLoading: false }};
             }
-            case 'App/Currency': {
-                const currency = action.payload;
-                // console.log(currency);
-                return {...state, ... { currency: currency }};
-            }
+
             default: {
                 return state;
             }

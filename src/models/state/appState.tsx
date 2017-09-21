@@ -1,20 +1,17 @@
-export interface IAppState{
+export interface IAppState {
     isInitializing: boolean; // first loading
     isLoading: boolean;
-    isAuthorized: boolean;
-    currency: any;
+    isAuthorized: boolean; 
 }
 
-export class AppState implements IAppState{
+export class AppState implements IAppState {
     isInitializing: boolean; // first loading
     isLoading: boolean;
-    isAuthorized: boolean;
-    currency: any;
+    isAuthorized: boolean; 
 
     constructor() {
         this.isInitializing = false;        
         this.isLoading = false;        
         this.isAuthorized = false;        
-        this.currency = null;        
     }
 }

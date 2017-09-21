@@ -6,81 +6,39 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Ledger');
 
+* {box-sizing: border-box;}
+html {font-size: 10px;}
+html|* > svg {
+  transform-origin: 50% 50% 0px;
+}
 
-.App {
+.app {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  background-color: #fafafa;
+  font-size: 1.8rem;
+  background-color: #f5f5f5;
   color: #574d3d;
 }
-.App h1 {
-  font-family: 'Ledger', serif;
-  color: #a69a7c;
-  font-size: 58px;
-  line-height: 58px;
-}
-.App h1 span {
-  font-family: 'Roboto', sans-serif;
-  color: #98ab3f;
-  font-size: 30px;
-  font-weight: 300;
+
+.app-route {
+  display: block;
 }
 
-
-.App-Header {
-  display: block;
-  box-shadow: 0px 0px 20px rgba(141, 48, 48, 0.05);
-  background-color: #fff;
-}
-.App-Logo {margin-top: 20px; margin-bottom: 18px;}
-
-.App-Nav {display: block; height: 62px; margin-top: 15px;}
-.App-Nav a {color: #574d3d; text-decoration: none;}
-.App-Nav a:hover {color: #98ab3f; text-decoration: none;}
-.App-Nav--User { text-align: right; margin-bottom: 10px; font-weight: 500;}
-.App-Nav--User span { margin-right: 12px; font-weight: 400; color: #959595; font-size: 14px;}
-.App-Nav--Navigation { text-align: right; }
-.App-Nav--Navigation ul {
-  display: inline-block;
-  list-style: none; 
-  border-top: 1px solid #efefef; }
-
-.App-Nav--Navigation ul li { display: inline-block; margin: 0px 12px; margin-top: 10px;}
-.App-Nav--Navigation ul li:last-child {margin-right: 0px;}
-
-.App-Cart {
-  display: block;
-  position: relative;
-  box-sizing: border-box;
-  color: #98ab3f;
-  margin-top: 15px; height: 62px;}
-
-.App-Cart i {margin-top: 20px;}
-
-.App-Cart--Count {
-  display: block;
-  box-sizing: border-box;
+.delta {
   position: absolute;
-  width: 28px;
-  height: 28px;
-  line-height: 18px;
-  top: 5px;
-  right: 15px;
-  border-radius: 50%;
-  background-color: #6b604c;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  padding: 5px;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: none;
 }
+.delta.delta-left {float: left; z-index: 99;}
+.delta.delta-right {right: 0 !important; z-index: 99; left: auto;}
+.delta path {fill: #fff; stroke: #fff; stroke-width: 4;}
+.delta-grey path {fill: #f5f5f5; stroke: #f5f5f5; stroke-width: 4;}
 
-.App-Route {
-  display: block;
-  min-height: 90vh;
-  padding-top: 20px;
-}
+.topdelta-right {}
+.topdelta-right path {fill: #fff; stroke: #fff; stroke-width: 4;}
+.topdelta-right--gray path {fill: #f5f5f5; stroke: #f5f5f5; stroke-width: 4;}
 
-
-.App-Footer {background-color: #ececec;}
-.App-Footer ul {margin: 0px;}
+.topdelta-left {}
+.topdelta-left path {fill: #fff; stroke: #fff; stroke-width: 4;}
+.topdelta-left--gray path {fill: #f5f5f5; stroke: #f5f5f5; stroke-width: 4;}
