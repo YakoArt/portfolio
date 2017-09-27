@@ -1,2 +1,10 @@
 .hero-wrap {height: 100vh; position: relative; background-color: #333;}
-.hero {position: relative; color: #fff;}
+.hero-wrap {
+    background-image: url('../../data/images/bg-main.jpg');
+    background-position: center 80%;
+    background-size: cover;
+    background-repeat: none;
+}
+.hero {position: relative; color: #fff; padding-top: 175px;}
+p .fa {padding: 0rem 1rem; color: #333;}
+.btn-down {margin: 7rem 0rem  0rem 10rem; color: #333;}

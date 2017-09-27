@@ -18,10 +18,12 @@ class Blog extends React.Component<IBlogProps, IBlogState> {
   render() {
     return (
       <div className="blog-wrap">
-        <svg className="topdelta-left" width="100%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
+        <svg className="topdelta-left" width="100%" height="170" viewBox="0 0 100 107" preserveAspectRatio="none">
             <path d="M0 0 L30 100 L100 0 Z"></path>
         </svg>
+        <div className="container">
           <h2>Blog Block</h2>
+        </div>
       </div>
     );
   }

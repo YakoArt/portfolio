@@ -19,10 +19,12 @@ class Contacts extends React.Component<IContactsProps, IContactsState> {
     return (
       <div className="contacts-wrap">
         {/* tslint:disable-next-line:max-line-length */}
-        <svg className="topdelta-right topdelta-right--gray" width="100%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
+        <svg className="topdelta-right topdelta-right--gray" width="100%" height="170" viewBox="0 0 100 107" preserveAspectRatio="none">
           <path d="M0 0 L70 100 L100 0 Z"></path>
         </svg>
-        <h2>Contacts Block</h2>
+        <div className="container">
+          <h2>Контакты</h2>
+        </div>
       </div>
     );
   }

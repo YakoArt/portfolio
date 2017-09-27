@@ -19,7 +19,17 @@ class AboutMe extends React.Component<IAboutMeProps, IAboutMeState> {
     return (
       <div className="aboutme-wrap">
         <div className="aboutme">
-          <h2>About Me</h2>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4">
+                <p><span className="light">тут блок с фото</span></p> 
+              </div>
+              <div className="col-lg-7 col-lg-offset-1">
+                <h2>О себе</h2>
+                <p>Текст на два обзаца.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

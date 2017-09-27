@@ -1,1 +1,8 @@
 .portfolio-wrap {background-color: #fff;}
+.img-wrap {
+    display: inline-block;
+    width: 36rem;
+    margin: 1.5rem 1.5rem; 
+}
+// .img-wrap:first-child, .img-wrap:nth-child(4n) {margin-left: 0rem;}
+.img-wrap img {width: 100%; height: 100%;}
