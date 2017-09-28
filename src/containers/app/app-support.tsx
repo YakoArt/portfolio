@@ -26,4 +26,4 @@ let products = [
 ];
 
 let jsnString = JSON.stringify(products);
-console.log(jsnString);
+// console.log(jsnString);

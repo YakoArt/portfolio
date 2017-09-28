@@ -90,7 +90,7 @@ class Photo extends React.Component<IPhoto> {
   }
   render() {
     return(
-      <div  className="img-wrap" key={this.props.id}>
+      <div  className="portfolio--img-wrap" key={this.props.id}>
         <img src={this.props.imgUrl} data-category={this.props.category} />
       </div>
     );
@@ -106,7 +106,7 @@ class Portfolio extends React.Component<IPortfolioProps, IPortfolioState> {
   }
 
   selectCategory = (element:any) => {
-    console.log('Этот елемент : ' + element);
+    // console.log('Этот елемент : ' + element);
     /* Перевод имени категории в нижний регистр */
     let categoryName: any = element.toLowerCase();
     let displayedCategory = WORK_DATA.filter(function(el) {

@@ -1,1 +1,11 @@
-.aboutme-wrap {height: 50vh; position: relative;}
+.aboutme-wrap {position: relative;}
+.aboutme {padding: 16rem 0px 4rem 0px;}
+.aboutme h2 {margin-top: 0px;}
+.aboutme--avatar {
+    display: block;
+    width: 36rem;
+    height: 36rem;
+    background: rgba(0, 0, 0, 0.10);
+}
+
+.aboutme--avatar img {width: 100%; margin-top: -15%; margin-left: calc(15% - 1.5rem); }

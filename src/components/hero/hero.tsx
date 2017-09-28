@@ -28,17 +28,19 @@ class Hero extends React.Component<IHeroProps, IHeroState> {
 
     return (
       <div className="hero-wrap">
-        <div className="hero">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-11 col-lg-offset-1">
-                <h1>Yakoart</h1>
-                <p>
-                  <i className="fa fa-vk fa-2x" aria-hidden="true"></i>
-                  <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                  <i className="fa fa-github fa-2x" aria-hidden="true"></i>
-                </p>
-                <div className="btn-down"><i className="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-11 col-lg-offset-1">
+              <div className="hero">
+                <div className="hero--stance">
+                  <h1>Yakoart</h1>
+                  <p>
+                    <i className="fa fa-vk fa-2x" aria-hidden="true"></i>
+                    <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    <i className="fa fa-github fa-2x" aria-hidden="true"></i>
+                  </p>
+                  <div className="btn-down"><i className="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+                </div>
               </div>
             </div>
           </div>

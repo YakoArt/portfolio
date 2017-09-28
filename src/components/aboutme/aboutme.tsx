@@ -22,7 +22,9 @@ class AboutMe extends React.Component<IAboutMeProps, IAboutMeState> {
           <div className="container">
             <div className="row">
               <div className="col-lg-4">
-                <p><span className="light">тут блок с фото</span></p> 
+                <div className="aboutme--avatar">
+                  <img src={require('../../data/images/portfolio_Avatar.png')} alt="avatar" />
+                </div>
               </div>
               <div className="col-lg-7 col-lg-offset-1">
                 <h2>О себе</h2>
