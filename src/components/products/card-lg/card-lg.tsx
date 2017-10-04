@@ -2,12 +2,12 @@ import './card-lg.css';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { withRouter, Link } from 'react-router-dom';
-import { AppActions } from '../../../actions/appActions';
+// import { AppActions } from '../../../actions/appActions';
 
 // tslint:disable-next-line:interface-name
 interface ICardProps {
   Base: any;
-  cards: () => void;          
+  // cards: () => void;          
 }
 // tslint:disable-next-line:interface-name
 interface ICardState {
@@ -19,7 +19,7 @@ class Card extends React.Component<ICardProps, ICardState> {
   }
 
   componentWillMount() {
-    this.props.cards();
+    // this.props.cards();
   }
 
   render() {
@@ -60,7 +60,7 @@ const mapStateToProps = (state: any, ownProps: any) => {
 
 const mapDispatchToProps = (dispatch: any, ownProps: any) => {
   return {
-    cards: () => { dispatch(AppActions.cards());  }
+    // cards: () => { dispatch(AppActions.cards());  }
     // onClick: () => { dispatch()  }
   };
 };

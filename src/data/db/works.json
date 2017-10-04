@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Title work 1",
+        "discription": "Some text about work 1",
+        "category": "Разарботка",
+        "imgSrc": "/static/media/work-1.bac133fd.jpg",
+        "alt": "work-1"
+    },
+    {
+        "id": 2,
+        "title": "Title work 2",
+        "discription": "Some text about work 2",
+        "category": "Веб-дизайн",
+        "imgSrc": "/static/media/work-2.2f8dd468.jpg",
+        "alt": "work-2"
+    },
+    {
+        "id": 3,
+        "title": "Title work 3",
+        "discription": "Some text about work 3",
+        "category": "Брендинг",
+        "imgSrc": "/static/media/work-3.3ad76834.jpg",
+        "alt": "work-3"
+    },
+    {
+        "id": 4,
+        "title": "Title work 4",
+        "discription": "Some text about work 4",
+        "category": "Веб-дизайн",
+        "imgSrc": "/static/media/work-4.91ca0b04.jpg",
+        "alt": "work-4"
+    },
+    {
+        "id": 5,
+        "title": "Упаковка для надувных санок",
+        "discription": "",
+        "category": "Упаковка",
+        "imgSrc": "/static/media/Pack_Snowtube.cc4fb7af.png",
+        "alt": "Упаковка санок"
+    },
+    {
+        "id": 6,
+        "title": "Упаковка для чайника",
+        "discription": "",
+        "category": "Упаковка",
+        "imgSrc": "/static/media/Pack_Kettle.24342e52.png",
+        "alt": "Упаковка чайника"
+    }
+]

@@ -10,4 +10,11 @@
 .hero h1 {margin-top: 0px;}
 .hero--stance {display: block; position: absolute; top: 50%; transform: translateY(-50%);}
 .hero--stance p .fa {padding: 0rem 1rem; color: #333;}
-.hero--stance .btn-down {margin: 7rem 0rem  0rem 10rem; color: #333;}
+.hero--stance .btn-down {
+    display: block;
+    width: 3.6rem;
+    height: 3.6rem;
+    text-align: center;
+    line-height: 3.6rem;
+    margin: 7rem 0rem  0rem 10rem;
+    color: #333;}

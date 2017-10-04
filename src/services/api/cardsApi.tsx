@@ -1,6 +1,6 @@
 import * as data from '../../data/bd/catalog/face-care/product.json';
 
-export class CardApi {
+export class CardsApi {
     dBase: any;
     constructor() {
         this.dBase = { ...data };

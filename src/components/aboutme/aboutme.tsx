@@ -17,7 +17,7 @@ class AboutMe extends React.Component<IAboutMeProps, IAboutMeState> {
   componentWillMount() {}
   render() {
     return (
-      <div className="aboutme-wrap">
+      <div className="aboutme-wrap" id="aboutme">
         <div className="aboutme">
           <div className="container">
             <div className="row">

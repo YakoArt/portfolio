@@ -1,23 +1,23 @@
-* {}
 .portfolio-wrap {background-color: #fff;}
-.portfolio-wrap a {
+
+.portfolio {padding-bottom: 3rem; transition: all ease .5; min-height: 49rem;}
+
+.portfolio--filter-wrap {min-height: 2.7rem; padding-top: 5px;}
+
+.portfolio--filter-wrap a.light,
+.portfolio--filter-wrap a.light--active {
     display: inline-block; margin: 0px 20px 10px 0px;
     font-size: 1.8rem; line-height: 2.6rem; color: rgb(160, 160, 160); font-weight: 400;
     cursor: pointer; text-decoration: none; 
     transition: all 0.275s linear;
 }
-.portfolio-wrap a:hover {
+
+.portfolio--filter-wrap a.light:hover,
+.portfolio--filter-wrap a.light--active,
+.portfolio--filter-wrap a.light--active:hover {
     font-size: 1.8rem; line-height: 2.5rem; color: rgb(33, 33, 33);
     cursor: pointer; text-decoration: none;
 }
 
-.portfolio {padding-bottom: 3rem;}
-.portfolio--filter-wrap {min-height: 2.7rem; padding-top: 5px;}
 .portfolio--img-wrap {display: inline-block; width: 36rem; margin: 1.5rem 1.5rem;}
-.portfolio--img-wrap img {width: 100%; height: 100%;}
-
-
-
-
-
-
+.portfolio--img-wrap img {width: 100%; height: 100%; transition: all ease 0.3s;}

@@ -4,7 +4,7 @@ export default class AppReducer {
     // Reducer приложения
     // -> Принимает на вход текущее состояние узла в State
     // -> Создает набор новых данных в соответсвии с шаблоном AppState
-    // -> Отдает новые значения в IAppState
+    // -> Отдает новые значения state по новому шаблону IAppState
     static handle(state: any = new AppState, action: any): IAppState {
         switch (action.type) {
             case 'App/Init': {
@@ -21,8 +21,13 @@ export default class AppReducer {
             }
             case 'App/Spinner/Hide': {
                 return {...state, ... { isLoading: false }};
+            }/*
+            case 'App/Works': {
+                let Data = new action.payload;
+                let Works = Data.works;
+                return {...state, Works};
             }
-
+*/
             default: {
                 return state;
             }

@@ -26,6 +26,7 @@ class Hero extends React.Component<IHeroProps, IHeroState> {
     // console.log(this.props.Base);
     // const Name = this.props.Base && this.props.Base.name ? this.props.Base.name : 'Нет данных';
 
+  
     return (
       <div className="hero-wrap">
         <div className="container">
@@ -35,11 +36,11 @@ class Hero extends React.Component<IHeroProps, IHeroState> {
                 <div className="hero--stance">
                   <h1>Yakoart</h1>
                   <p>
-                    <i className="fa fa-vk fa-2x" aria-hidden="true"></i>
-                    <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                    <i className="fa fa-github fa-2x" aria-hidden="true"></i>
+                    <a href="https://vk.com/id139081324" target="_blank"><i className="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/yako.art/" target="_blank"><i className="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/YakoArt/portfolio/tree/develop" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
                   </p>
-                  <div className="btn-down"><i className="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+                  <a className="btn-down" href="#aboutme"><i className="fa fa-angle-down fa-2x" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>

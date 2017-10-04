@@ -1,7 +1,9 @@
 import * as Redux from 'redux';
-import { CardApi } from '../services/api/cardsApi';
+// import { CardApi } from '../services/api/cardsApi';
+import { WorksApi }  from '../services/api/worksApi';
 
 import { IGlobalState } from '../models/state/globalState';
+// import { FilterActions } from './filterActions'
 
 export class AppActions {
 
@@ -21,13 +23,26 @@ export class AppActions {
         };
     }
 
-    static cards(): (dispatch: Redux.Dispatch<any>, getState: () => IGlobalState, thunkService: any) => any {
+    static getWorks(): (dispatch: Redux.Dispatch<any>, getState: () => IGlobalState, thunkService: any) => any {
         return (dispatch: Redux.Dispatch<any>, getState: () => IGlobalState, thunkService: any) => {
+            console.log('(Action)-> Works/readJSON was done');
             dispatch({
-                type: 'Card/Base'
-                , payload: CardApi
+                type: 'Works/readJSON'
+                , payload: WorksApi
             });
         };
     }
+
+    static setCategoryWork(Category:string): (dispatch: Redux.Dispatch<any>, getState: () => IGlobalState, thunkService: any) => any {
+        return (dispatch: Redux.Dispatch<any>, getState: () => IGlobalState, thunkService: any) => {
+            console.log('(Action)-> Works/setCategory was done');
+            dispatch({
+                type: 'Works/setCategory',
+                payload: Category
+            });
+        };
+    }
+
+
 
 }
