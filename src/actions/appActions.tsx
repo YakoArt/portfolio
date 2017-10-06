@@ -33,12 +33,12 @@ export class AppActions {
         };
     }
 
-    static setCategoryWork(Category:string): (dispatch: Redux.Dispatch<any>, getState: () => IGlobalState, thunkService: any) => any {
+    static setCategoryWorkAction(category:string): (dispatch: Redux.Dispatch<any>, getState: () => IGlobalState, thunkService: any) => any {
         return (dispatch: Redux.Dispatch<any>, getState: () => IGlobalState, thunkService: any) => {
             console.log('(Action)-> Works/setCategory was done');
             dispatch({
                 type: 'Works/setCategory',
-                payload: Category
+                payload: category
             });
         };
     }

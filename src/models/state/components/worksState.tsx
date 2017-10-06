@@ -2,7 +2,7 @@
 export interface IWorksState {
     worksState: any
     categoryList: any
-    Category: any;
+    category: any;
     // categoriesSet - набор категорий
     // relatedWork - соответствующие работы (relevant items)
 }
@@ -10,9 +10,9 @@ export interface IWorksState {
 export class WorksState implements IWorksState {
     worksState: any;
     categoryList: any;
-    Category: any;
+    category: any;
     constructor() {
-        this.Category = "Все";
+        this.category = " Все ";
         this.worksState = [];
         this.categoryList = ['Все'];
     }

@@ -1,5 +1,6 @@
 import './portfolio.css';
 import * as React from 'react';
+import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
@@ -7,28 +8,27 @@ import FilterItems from './elements/filter_items';
 import PhotoItems from './elements/photo_items';
 
 import { AppActions } from '../../actions/appActions';
-// import { setCategoryWork } from '../../actions/filterActions';
 
 
 interface IPortfolioProps {
   Works: any;           // массив всех работ (изм. от выбранной категории)
   СategoryList: any;    // списко доступных категорий
-  Category: any;        // выбранная категория
+  Category: string;        // выбранная категория
+  //setCategoryWork: (category:string) => string;
   getWorks: () => void;
-  setCategoryWork: () => void;
+  //setNewCat: any;
+  setCategoryWorkAction:any;
+  
 }
 interface IPortfolioState {
-  Category: string;
-  newCategory:string;
+  //Category: string;
+  //newCategory:string;
+  //setCategoryWork: any;
 }
 
 class Portfolio extends React.Component<IPortfolioProps, IPortfolioState> {
   constructor() {
     super()
-    this.setCategoryWorks = this.setCategoryWorks.bind(this)
-    /*
-    this.state = {
-      Category: !!this.props.Category ? this.props.Category: 'Все'*/
     };
   
   componentWillMount() {
@@ -38,36 +38,16 @@ class Portfolio extends React.Component<IPortfolioProps, IPortfolioState> {
     Вызываеься getWorks(), которая обновляет State перед началом рендеринга.
     */
     this.props.getWorks();
+    
   }
-  /*
-  setCategoryWorks = (newCategoryName: string) => {
-    this.setState({
-      Category: newCategoryName
-    });
-  */
   
-  setCategoryWorks = (elem:any) => {
-    /*this.setState({
-      Category: elem.target.textContent
-    });
-    */
-    // this.props.setCategoryWork("elem.target.textContent")
-    //this.props.Category(this.state.Category);
-    console.log(this.props.setCategoryWork);
-    console.log('newCategoryName : ' + elem.target.textContent);
-  }
-
-  render() {
-    let newWorks: any = this.props.Works;
-    let CategoryList: any = this.props.СategoryList;
-    let setCategory: any = this.props.Category;
-    /*
-    console.log('newWorks');
-    console.log(newWorks);
-    console.log('CategoryList');
-    console.log(CategoryList);
-    */
-    console.log(this);
+    render() {
+    const setCategoryWorkAction: any = this.props.setCategoryWorkAction;
+    const newWorks: any = this.props.Works;
+    const CategoryList: any = this.props.СategoryList;
+    const setCategory: any = this.props.Category;
+    
+    // console.log(this.props);
     console.log('setCategory');
     console.log(setCategory);
 
@@ -87,7 +67,7 @@ class Portfolio extends React.Component<IPortfolioProps, IPortfolioState> {
                   куда для каждого через props передаем категорию(el.category) и соответствующий index (i) */}
                   { 
                     CategoryList.map((el:string, i:string) => {
-                      return <FilterItems category={el} key={i} setCategory={setCategory} setCategoryWorks={this.setCategoryWorks}/>
+                      return <FilterItems setCategoryWorkAction={setCategoryWorkAction} category={el} key={i} setCategory={setCategory} />
                     })
                   }
                 </div>
@@ -111,14 +91,14 @@ const mapStateToProps = (state: any, ownProps: any) => {
   return {
     Works: state.worksReducer.worksState,
     СategoryList: state.worksReducer.categoryList,
-    Category: state.worksReducer.Category
+    Category: state.worksReducer.category
   };
 };
 
 const mapDispatchToProps = (dispatch: any, ownProps: any,) => {
   return {
     getWorks: () => { dispatch(AppActions.getWorks()); },
-    setCategoryWorks: (Category:string) => { dispatch(AppActions.setCategoryWork(Category)); },
+    setCategoryWorkAction: bindActionCreators(AppActions.setCategoryWorkAction,dispatch)
   };
 };
 

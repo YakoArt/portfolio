@@ -30,14 +30,11 @@ export default class WorksReducer {
             }
             case 'Works/setCategory': {
                 console.log('(Reducer)-> Works/setCategory was done');
-                let Category = action.payload;
-                return {...state, Category: Category} 
+                let category = action.payload;
+                return {...state, category: category} 
             }
             default: {
-                /* 
-                Возвратит state при первой загрузки,
-                в котором лежит значение по умолчанию, которое было определено в worksState.tsx
-                 */
+                /* Возвратит state при первой загрузки, в котором лежит значение по умолчанию, которое было определено в worksState.tsx */
                 return state;
             }
         }
